@@ -1,0 +1,52 @@
+package string;
+
+public class CheckPassword {
+
+	public boolean checkLength(String password) {
+		if (password.length() >= 8)
+			return true;
+		return false;
+	}
+
+	public boolean checkSymbol(String pass) {
+		boolean checkMinNumber = false;
+		boolean checkUpper = false;
+		boolean checkSymbol = false;
+		for (int i = 0; i < pass.length(); i++) {
+			if (pass.charAt(i) > '0' && pass.charAt(i) < '9') {
+				checkMinNumber = true;
+			}
+			if (pass.charAt(i) > 'A' && pass.charAt(i) < 'Z') {
+				checkUpper = true;
+			}
+			switch (pass.charAt(i)) {
+			case '~':
+			case '!':
+			case '@':
+			case '#':
+			case '$':
+			case '%':
+			case '^':
+			case '&':
+			case '*':
+			case '(':
+			case ')':
+				checkSymbol = true;
+			}
+		}
+		if (checkMinNumber == true && checkUpper == true && checkSymbol == true) {
+			return true;
+		}
+		return false;
+	}
+
+	public boolean checkDuplicate() {
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

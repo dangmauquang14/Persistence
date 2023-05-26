@@ -1,0 +1,55 @@
+package oop.vehicle;
+
+import java.util.Scanner;
+
+public class App {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		Vehicle vehicles[] = null;
+		int a, n = 0;
+		boolean flag = true;
+		do {
+			System.out.println("Hay dua ra lua chon 1 trong 3: ");
+			System.out.println("1. Nhap so luong xe.");
+			System.out.println("2. Export tax info.");
+			System.out.println("3. Exit");
+			a = sc.nextInt();
+			switch (a) {
+			case 1:
+				System.out.println();
+				n = sc.nextInt();
+				vehicles = new Vehicle[n];
+				for (int i = 0; i < n; i++) {
+					System.out.println("Xe thứ " + (i + 1));
+					vehicles[i] = new Vehicle();
+					nhapXe(vehicles[i]);
+				}
+				break;
+			case 2:
+				for (Vehicle vehicle : vehicles) {
+					System.out.println(vehicle);
+				}
+				break;
+			default:
+				System.out.println("exit program");
+				flag = false;
+				break;
+			}
+		} while (flag);
+	}
+
+	public static void nhapXe(Vehicle xe) {
+		System.out.print("Nhập tên chủ xe: ");
+		xe.setChuXe(sc.nextLine());
+		sc.nextLine();
+		System.out.print("Nhập loại xe: ");
+		xe.setLoaiXe(sc.nextLine());
+		System.out.print("Nhập dung tích xe: ");
+		xe.setDungTich(sc.nextInt());
+		System.out.print("Nhập giá trị xe: ");
+		xe.setGiaTri(sc.nextDouble());
+		;
+		sc.nextLine();
+	}
+}

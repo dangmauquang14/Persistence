@@ -1,0 +1,28 @@
+package choibai;
+import java.util.List;
+import java.util.Random;
+
+public class PlayCard {
+	public static void main(String[] args) {
+		List<Card> cards = Card.initialListCard();
+		shuffleCards(cards);
+		List<Player> players = Player.initialData();
+		dealCards(cards, players);
+		System.out.println(players);
+	}
+
+	public static void shuffleCards(List<Card> source) {
+		source.sort((o1, o2) -> (new Random()).nextInt(2) - 1);
+	}
+
+//	public static void dealCards(List<Card> cards, List<Player> players) {
+//		int count = 0;
+//		for (int i = 0; i < cards.size(); i++) {
+//			players.get(count++)
+//					.getCards()
+//					.add(cards.get(i));
+//			if(count == 4) count = 0;
+//		}
+//	}
+
+}

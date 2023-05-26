@@ -1,0 +1,25 @@
+package string;
+
+import java.util.Scanner;
+
+public class RanDomMang2Chieu {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int row = sc.nextInt();
+		sc.nextLine();
+		int col = sc.nextInt();
+		int matrix[][] = new int[row][col];
+		printMatrx(matrix);
+	}
+	
+	private static void printMatrx(int[][] matrix) {
+		for (int i = 0; i < matrix.length; i++) {
+			System.out.println("");
+			for (int j = 0; j < matrix[i].length; j++) {
+				System.out.print(matrix[i][j] + " ");
+
+			}
+		}
+	}
+}
+
