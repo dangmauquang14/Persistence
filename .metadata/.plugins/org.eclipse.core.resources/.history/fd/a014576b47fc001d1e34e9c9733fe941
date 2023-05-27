@@ -1,0 +1,35 @@
+package kiemtracuoikhoa;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class KiTuXuatHienNhieuNhatTrongChuoi {
+	public static void main(String[] args) {
+
+		String string = "aaaababbbddc";
+		
+		int largestLength = 0;
+		int length = 1;
+
+			for (int i = 1; i < string.length(); i++) {
+				if (string.charAt(i - 1) == string.charAt(i)) {
+					length++;
+
+				} else {
+
+					if (length < smallestLength) {
+						smallestLength = length;
+						indexMin = i - length;
+						minString = string.substring(indexMin, i);
+					}
+
+					length = 1;
+				}
+				if (length > largestLength) {
+					largestLength = length;
+					indexMax = i - length + 1;
+					maxString = string.substring(indexMax, i + 1);
+				}
+
+	}
+}

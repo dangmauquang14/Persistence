@@ -1,0 +1,22 @@
+package kiemtracuoikhoa;
+
+public class KiTuXuatHienNhieuNhatTrongChuoi {
+	public static void main(String[] args) {
+
+		String string = "aaaababbbddc";
+
+		int largestLength = 0;
+		int length = 1;
+
+		for (int i = 1; i < string.length(); i++) {
+			if (string.charAt(i - 1) == string.charAt(i)) {
+				length++;
+
+			}
+			if (length > largestLength) {
+				largestLength = length;
+			}
+
+		}
+	}
+}
