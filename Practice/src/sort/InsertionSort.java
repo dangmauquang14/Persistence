@@ -13,7 +13,9 @@ public class InsertionSort {
 		for (int round = numbers.length - 1; round > 0; round--) {
 			for (int i = 0; i < round; i++) {
 				if (numbers[i] > numbers[round]) {
-					SortUtils.swap(numbers, i, round);
+					int temp = numbers[i];
+					numbers[i] = numbers[round];
+					numbers[round] = temp;
 				}
 			}
 		}
