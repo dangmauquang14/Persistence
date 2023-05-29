@@ -1,0 +1,9 @@
+package phonglogic.generic;
+	// 14.Nhập 2 số nguyên dương a và b. Sau đó in ra ước số chung lớn nhất (USCLN) và
+	// bội số chung nhỏ nhất (BSCNN) của 2 số nguyên dương a và b đó
+
+public class UCLNAndBCNN {
+	public static void main(String[] args) {
+		
+	}
+}

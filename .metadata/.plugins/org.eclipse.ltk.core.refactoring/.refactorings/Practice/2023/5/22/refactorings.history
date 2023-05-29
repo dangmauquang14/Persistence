@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;phonglogic.generic.NhanVien&apos; to &apos;Logic2&apos;&#x0D;&#x0A;- Original project: &apos;Practice&apos;&#x0D;&#x0A;- Original element: &apos;phonglogic.generic.NhanVien&apos;&#x0D;&#x0A;- Renamed element: &apos;phonglogic.generic.Logic2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NhanVien&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;phonglogic.generic{NhanVien.java[NhanVien" matchStrategy="1" name="Logic2" qualified="false" references="true" similarDeclarations="false" stamp="1685247798572" textual="false" version="1.0"/>
+</session>
