@@ -1,0 +1,13 @@
+package datetime;
+
+public class Test {
+	public static void main(String[] args) {
+		
+	}
+	
+	public static  <T super Number> print(<T> number){
+		System.out.println(number);
+	}
+}
+
+

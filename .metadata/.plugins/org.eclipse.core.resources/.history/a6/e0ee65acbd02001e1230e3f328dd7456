@@ -1,0 +1,5 @@
+package datetime;
+
+public interface Animals {
+	protected int foot();
+}

@@ -1,0 +1,6 @@
+package datetime;
+
+public interface Animals {
+	int a = 5;
+	public int foot();
+}

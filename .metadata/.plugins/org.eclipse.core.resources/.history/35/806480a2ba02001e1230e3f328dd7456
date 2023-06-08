@@ -1,0 +1,8 @@
+package datetime;
+
+public interface Animals {
+	int main;
+	public static void main(String[] args) {
+		
+	}
+}

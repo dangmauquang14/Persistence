@@ -1,6 +1,0 @@
-package collections;
-/*
-  	Với n nhập từ bàn phím. Viết chương trình in ra 2 tam giác đối đỉnh bằng số tăng theo cột từ
-	1 đến 2n-1.
-	VD: Với n = 5. Hai tam giác sẽ đối đỉnh qua giá trị 3
- */
