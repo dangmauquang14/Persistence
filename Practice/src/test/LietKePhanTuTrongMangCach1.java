@@ -31,7 +31,7 @@ public class LietKePhanTuTrongMangCach1 {
 		});
 	}
 
-	public static Map<Integer, Integer> convertToMap(int[] a) {
+	public static Map<Integer, Integer> convertToMap(int[] a) {	
 		Map<Integer, Integer> result = new HashMap<>();
 		for (Integer i : a) {
 			if (result.containsKey(i)) {
