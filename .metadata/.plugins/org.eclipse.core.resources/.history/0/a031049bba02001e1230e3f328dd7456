@@ -1,6 +1,0 @@
-package datetime;
-
-public interface Animals {
-	private int main = 0;
-	
-}

@@ -1,8 +1,0 @@
-package datetime;
-
-public interface Animals {
-	static int a = 5;
-	public static int foot() {
-		return 0;
-	}
-}

@@ -1,8 +1,0 @@
-package datetime;
-
-public abstract class Cat {
-	int foot;
-	public Cat() {
-		// TODO Auto-generated constructor stub
-	}
-}

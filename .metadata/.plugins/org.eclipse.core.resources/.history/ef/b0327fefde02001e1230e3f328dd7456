@@ -1,7 +1,0 @@
-package datetime;
-
-public abstract class Cat {
-	int foot;
-	
-	
-}
